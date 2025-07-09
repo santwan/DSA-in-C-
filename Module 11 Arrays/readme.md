@@ -6,7 +6,7 @@
 
 ### [Question 2 - Linear Search](./Questions/Question-2-Linear-Search.cpp)
 
-###
+### [Question 3 - Find the maximum value element](./Questions/Question-3.cpp)
 
 <details>
   <summary><strong>Algo & Approach</strong></summary>
