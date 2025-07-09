@@ -11,50 +11,26 @@
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
-  <pre><code>
-//*------------------
-//*1. Linear scan   |  
-//*------------------
+### 1. Linear Scan
 
-/*
-Idea: Iterate through array and track the largest value
+- Assume the first element is the maximum.
+- Traverse the array from left to right.
+- If any element is greater than the current maximum, update it.
+- At the end, the maximum value will be stored.
 
-Algorithm: 
-- start assuming the first element is the MAXIMUM
-- Iterate over the array using a loop
-- then compare the max with the other element in the array 
-- if an element greater than the max is found => then update the max 
-- at end , the highest value will be inside the max 
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)  
+**Best when:** You want the most efficient solution.
 
-max = arr[0] or max = INT_MIN
-for( from i=0 to i<arr.length ){
-    if( max < arr[i]){
-        update max = arr[i]
-    }
-}
-*/
+---
 
-//? Time Complexity : O(n)
-//? Space Complexity: O(1)
-//? Most efficient and recommended for real use
+### 2. Using Sorting
 
-//*--------------------
-//*2. Using Sorting   |
-//*--------------------
-/*
-Idea: Sort the array and pick the last element
+- Sort the array in ascending order.
+- After sorting, the last element will be the maximum.
+- Simply return the last element.
 
-Algorithm: 
-- Another way to find the maximum value is by sorting the array.
-- Once the array is sorted in ascending order, the last element will be the largest one.
-- So I just sort the array and pick the last element to find the max 
-
-sort(array)
-max = array[last index]
-
-*/
-
-//?  Time Complexity: O(n logn)  if we are using the best sorting algo 
-//?  Space Complexity: O(1)
-  </code></pre>
+**Time Complexity:** O(n log n)  
+**Space Complexity:** O(1)  
+**Best when:** You already need the array sorted for other reasons.
 </details>
