@@ -1,12 +1,22 @@
-# Module 11: Arrays
+# 📦 Module 11: Arrays
 
-## Questions
+## 📘 Questions List
 
-### [Question 1 - Calculate the sum of all the elements in the given array](./Questions/Question-1.cpp)
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
+  <h3>🔹 <a href="./Questions/Question-1.cpp">Question 1 – Calculate the Sum of All Elements</a></h3>
+  <p>📌 Add all values of the array and return the total sum.</p>
+</div>
 
-### [Question 2 - Linear Search](./Questions/Question-2-Linear-Search.cpp)
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
+  <h3>🔹 <a href="./Questions/Question-2-Linear-Search.cpp">Question 2 – Linear Search</a></h3>
+  <p>🔍 Search for a specific element in the array using the linear scan method.</p>
+</div>
 
-### [Question 3 - Find the maximum value element](./Questions/Question-3.cpp)
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
+  <h3>🔹 <a href="./Questions/Question-3.cpp">Question 3 – Find the Maximum Value</a></h3>
+  <p>📈 Determine the highest value in the array using an efficient approach.</p>
+</div>
+
 
 <details>
   <summary><strong>Algo & Approach</strong></summary>
