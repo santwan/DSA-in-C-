@@ -14,10 +14,6 @@
 
 <div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
   <h3>🔹 <a href="./Questions/Question-3.cpp">Question 3 – Find the Maximum Value</a></h3>
-  <p>📈 Determine the highest value in the array using an efficient approach.</p>
-</div>
-
-
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
@@ -44,3 +40,6 @@
 **Space Complexity:** O(1)  
 **Best when:** You already need the array sorted for other reasons.
 </details>
+
+</div>
+
