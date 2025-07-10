@@ -58,10 +58,10 @@ for( from i=0 to i<arr.length ){
 
 ### 1. Brute Force Approach
 
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">💡</div>
-<div data-node-type="callout-text">Python strings are <strong>immutable</strong>, which means once a string object is created, its contents cannot be changed. Any operation that modifies a string will return a <strong>new string object</strong> rather than altering the original.</div>
-</div>
+> 🔍 **How would I explain this in an interview?**  
+> "To find the second largest element in an array, I’ll first sort it in ascending order.  
+> After sorting, the last element is the largest.  
+> Then I’ll scan backward to find the next smaller unique number — that’s my second largest."
 
 - Assume the first element is the maximum.
 - Traverse the array from left to right.
