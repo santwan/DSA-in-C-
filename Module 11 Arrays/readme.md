@@ -2,15 +2,15 @@
 
 ## 📘 Questions List
 
-<div style="border: 1px solid rgb(213, 255, 1) ; border-radius: 8px; padding: 12px; margin-bottom: 16px;>
+<div style="border: 1px solid rgb(213, 255, 1) ; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
   <h3>🔹 <a href="./Questions/Question-1.cpp">Question 1 – Calculate the Sum of All Elements</a></h3>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px;>
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
   <h3>🔹 <a href="./Questions/Question-2-Linear-Search.cpp">Question 2 – Linear Search</a></h3>
 </div>
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px;>
+<div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
   <h3>🔹 <a href="./Questions/Question-3.cpp">Question 3 – Find the Maximum Value</a></h3>
 <details>
   <summary><strong>Algo & Approach</strong></summary>
