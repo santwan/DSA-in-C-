@@ -56,7 +56,12 @@ for( from i=0 to i<arr.length ){
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
-### 1. Linear Scan
+### 1. Brute Force Approach
+
+<div data-node-type="callout">
+<div data-node-type="callout-emoji">💡</div>
+<div data-node-type="callout-text">Python strings are <strong>immutable</strong>, which means once a string object is created, its contents cannot be changed. Any operation that modifies a string will return a <strong>new string object</strong> rather than altering the original.</div>
+</div>
 
 - Assume the first element is the maximum.
 - Traverse the array from left to right.
