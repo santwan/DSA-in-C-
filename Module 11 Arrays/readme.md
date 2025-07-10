@@ -24,6 +24,15 @@
 - If any element is greater than the current maximum, update it.
 - At the end, the maximum value will be stored.
 
+```cpp
+max = arr[0] or max = INT_MIN
+for( from i=0 to i<arr.length ){
+    if( max < arr[i]){
+        update max = arr[i]
+    }
+}
+```
+
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)  
 **Best when:** You want the most efficient solution.
