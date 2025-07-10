@@ -58,7 +58,7 @@ for( from i=0 to i<arr.length ){
 
 ### 1. Brute Force Approach
 
-> 🔍 **How would I explain this in an interview?**  
+**How would I explain this in an interview?**  
 > "To find the second largest element in an array, I’ll first sort it in ascending order.  
 > After sorting, the last element is the largest.  
 > Then I’ll scan backward to find the next smaller unique number — that’s my second largest."
