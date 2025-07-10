@@ -72,17 +72,19 @@ for( from i=0 to i<arr.length ){
 - Assign it if condition hits true and immediately terminate the loop because the array was already sorted.
 
 ```cpp
-max = arr[0] or max = INT_MIN
-for( from i=0 to i<arr.length ){
-    if( max < arr[i]){
-        update max = arr[i]
-    }
+sort( arr )
+max = arr [arr.length - 1]
+for( int i = arr.length - 2 to 0 ){
+  if(secMax < arr[i] && arr[i] != max){
+    secMax = arr[i];
+    return secMax;
+  }
+  return -1 if no second largest element found
 }
 ```
 
-**Time Complexity:** O(n)  
+**Time Complexity:** O(n logn) due to use sorting  
 **Space Complexity:** O(1)  
-**Best when:** You want the most efficient solution.
 
 ---
 
