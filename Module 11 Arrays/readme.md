@@ -63,10 +63,13 @@ for( from i=0 to i<arr.length ){
 > After sorting, the last element is the largest.  
 > Then I’ll scan backward to find the next smaller unique number — that’s my second largest.
 
-- Assume the first element is the maximum.
-- Traverse the array from left to right.
-- If any element is greater than the current maximum, update it.
-- At the end, the maximum value will be stored.
+- Sort the given array in a particular order 
+- then Take the last element as largest element 
+- Traverse the array using a loop 
+- Start the loop from the backward second last element 
+- Compare with the second largest element with other element one by one 
+- And also check if the current element is not equal to the largest element
+- Assign it if condition hits true and immediately terminate the loop because the array was already sorted.
 
 ```cpp
 max = arr[0] or max = INT_MIN
