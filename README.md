@@ -4,7 +4,7 @@ Welcome to my Data Structures and Algorithms repository!
 This repo contains my complete journey of solving DSA problems using **C++**, with clear structure, explanations, and code — all organized module-wise.
 
 ---
-### 📊 Total No of Question Solved in this repo: #5
+### 📊 Total No of Question Solved in this repo: 5
 ---
 
 ## 📑 Table of Contents
