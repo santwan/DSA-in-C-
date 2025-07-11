@@ -101,11 +101,13 @@ for( int i = arr.length - 2 to 0 ){
 - if: max < current element 
   - then I will update max to current element
   - and secMax = max because if new largest element that is greater than the max have found then definitely the value inside the current max becomes second largest in the array. So this step needs to be done first inside the if condition before assigning the current element to max. Otherwise second largest value wil be lost.
-- else: 
+- else: Check whether the secMax < current element && current element != max
+  - then assign the current element to secMax
+- End of the loop
+- return secMax
 
-**Time Complexity:** O(n log n)  
+**Time Complexity:** O(n)  
 **Space Complexity:** O(1)  
-**Best when:** You already need the array sorted for other reasons.
 </details>
 
 </div>
