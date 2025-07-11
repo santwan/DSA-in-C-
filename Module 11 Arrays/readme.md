@@ -200,9 +200,6 @@ return false
 
 ```
 
-
-
-
 ### Time Complexity: O(n)
   - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
 ### Space Complexity: O(n)   
