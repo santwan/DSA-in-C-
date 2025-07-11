@@ -106,6 +106,29 @@ for( int i = arr.length - 2 to 0 ){
 - End of the loop
 - return secMax
 
+``` cpp
+int max , secMax = INT_MIN
+for( int i = 0 to arr.size()-1 ){
+  if( arr[i] > max ){
+    secMax = max
+    max = arr[i]
+  }
+  else {
+    if(secMax < arr[i] && arr[i] != max ){
+      secMax = arr[i]
+    }
+  }
+  return secMax;
+}
+
+```
+### Edge Cases 
+- All the elements are equal
+  - No Second largest element exist return -1
+- Only one element in the array
+  - return -1
+
+
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)  
 </details>
