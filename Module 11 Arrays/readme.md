@@ -171,38 +171,32 @@ return false
 
 ---
 
-### 2. Optimal Approach
+### 2. Optimal Approach ( using hashing )
 
 **How am I thinking to solve this problem**  
-> “Instead of sorting, I’ll find the largest and second largest in a single pass.
-> I’ll initialize two variables: max and secMax.
-> While iterating, I update max if I find a new max,
-> and update secMax when I find a number less than max but greater than present element in the array.”
+> “To make it efficient, I’ll use a hash set.
+> I’ll scan each element and check if it already exists in the set.
+> If it does, it’s a duplicate → return true.
+> If not, I add it to the set.
+> If I finish the loop without finding a duplicate, return false.”
 
-- Initialize two variable max and secMax
-- Traverse the array using a loop from the start to end 
-- if: max < current element 
-  - then I will update max to current element
-  - and secMax = max because if new largest element that is greater than the max have found then definitely the value inside the current max becomes second largest in the array. So this step needs to be done first inside the if condition before assigning the current element to max. Otherwise second largest value wil be lost.
-- else: Check whether the secMax < current element && current element != max
-  - then assign the current element to secMax
-- End of the loop
-- return secMax
+
+- Initialize an empty hash set.
+- Loop through each element in the array.
+- If the element already exists in the set → return true.
+- Otherwise, insert the element into the set.
+- After the loop, return false.
+
+
 
 ``` cpp
-int max , secMax = INT_MIN
-for( int i = 0 to arr.size()-1 ){
-  if( arr[i] > max ){
-    secMax = max
-    max = arr[i]
-  }
-  else {
-    if(secMax < arr[i] && arr[i] != max ){
-      secMax = arr[i]
-    }
-  }
-  return secMax;
-}
+1. Initialize set = {}
+2. for i = 0 to n-1:
+3.     if arr[i] in set:
+4.         return true
+5.     else:
+6.         insert arr[i] into set
+7. return false
 
 ```
 
@@ -213,6 +207,8 @@ for( int i = 0 to arr.size()-1 ){
   - return -1
 
 
-### Time Complexity: O(n)  
-### Space Complexity: O(1)  
+### Time Complexity: O(n)
+  - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
+### Space Complexity: O(n)   
+  - #### Because in the worst case (no duplicates), we store all n elements in the set.
 </details>
