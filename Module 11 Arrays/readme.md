@@ -214,11 +214,10 @@ return false
 
 ## 1. Brute Force Approach
 
-//! How am I thinking?
-//* - Array is sorted and positive
-//* - I’ll scan starting from 1
-//* - Compare each with current array element
-//* - If a mismatch happens — that’s the missing number
+**How am I thinking to solve this problem**  
+> Since the array is sorted and contains only positive numbers, 
+>I can start checking from 1 and go up , comparing each number with the current element of the array 
+>as soon as the number i expect is not found , that's the missing one.
 
 - Loop through the array using index i
 
