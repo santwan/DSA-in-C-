@@ -205,3 +205,92 @@ return false
 ### Space Complexity: O(n)   
   - #### Because in the worst case (no duplicates), we store all n elements in the set.
 </details>
+
+
+
+### [🔹 Question 6 - Finding the smallest missing postive element in the sorted array that contains only positive elements](./Questions/Question-6.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+## 1. Brute Force Approach
+
+**How am I thinking to solve this problem**  
+> 
+
+- Loop through the array using index i
+
+
+```cpp
+
+
+```
+### Time Complexity: O()
+### Space Complexity:  O()  
+
+---
+
+## 2. Optimal Approach ( using hashing )
+
+**How am I thinking to solve this problem**  
+> 
+
+
+- Initialize 
+
+
+
+``` cpp
+
+
+```
+
+### Time Complexity: O(n)
+  - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
+### Space Complexity: O(n)   
+  - #### Because in the worst case (no duplicates), we store all n elements in the set.
+</details>
+
+
+
+
+### [🔹 Question 5 - Given an array. predict if the array contains duplicate or not](./Questions/Question-5.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+## 1. Brute Force Approach
+
+**How am I thinking to solve this problem**  
+> 
+
+- Loop through the array using index i
+
+
+```cpp
+
+
+```
+### Time Complexity: O()
+### Space Complexity:  O()  
+
+---
+
+## 2. Optimal Approach ( using hashing )
+
+**How am I thinking to solve this problem**  
+> 
+
+
+- Initialize 
+
+
+
+``` cpp
+
+
+```
+
+### Time Complexity: O(n)
+  - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
+### Space Complexity: O(n)   
+  - #### Because in the worst case (no duplicates), we store all n elements in the set.
+</details>
