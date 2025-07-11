@@ -214,8 +214,11 @@ return false
 
 ## 1. Brute Force Approach
 
-**How am I thinking to solve this problem**  
-> 
+//! How am I thinking?
+//* - Array is sorted and positive
+//* - I’ll scan starting from 1
+//* - Compare each with current array element
+//* - If a mismatch happens — that’s the missing number
 
 - Loop through the array using index i
 
