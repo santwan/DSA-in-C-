@@ -123,9 +123,9 @@ for( int i = 0 to arr.size()-1 ){
 
 ```
 ### Edge Cases 
-1. All the elements are equal
+- All the elements are equal
   - No Second largest element exist return -1
-2. Only one element in the array
+- Only one element in the array
   - return -1
 
 
