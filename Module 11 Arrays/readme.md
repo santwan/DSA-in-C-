@@ -139,7 +139,7 @@ for( int i = 0 to arr.size()-1 ){
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
-### 1. Brute Force Approach
+## 1. Brute Force Approach
 
 **How am I thinking to solve this problem**  
 > “I’ll compare every element with every other element using two nested loops.
@@ -171,7 +171,7 @@ return false
 
 ---
 
-### 2. Optimal Approach ( using hashing )
+## 2. Optimal Approach ( using hashing )
 
 **How am I thinking to solve this problem**  
 > “To make it efficient, I’ll use a hash set.
@@ -200,11 +200,7 @@ return false
 
 ```
 
-### Edge Cases 
-- All the elements are equal
-  - No Second largest element exist return -1
-- Only one element in the array
-  - return -1
+
 
 
 ### Time Complexity: O(n)
