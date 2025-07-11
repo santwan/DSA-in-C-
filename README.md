@@ -5,15 +5,16 @@ This repo contains my complete journey of solving DSA problems using **C++**, wi
 
 ---
 
-## 📂 Folder Structure
+## 📑 Table of Contents
 
-├── Module 11 Arrays/
-│ ├── Question-1.cpp
-│ ├── Question-2-Linear-Search.cpp
-│ └── readme.md
-├── .vscode/
-├── .gitignore
-└── README.md
+### 📘 Modules
+
+- [Module 11: Arrays](./Module%2011%20Arrays/readme.md)
+  - [Question 1 - Calculate sum of elements](./Module%2011%20Arrays/Question-1.cpp)
+  - [Question 2 - Linear Search](./Module%2011%20Arrays/Question-2-Linear-Search.cpp)
+  - [Question 3 - Find Maximum](./Module%2011%20Arrays/Question-3-Find-Max.cpp) *(coming soon)*
+
+> ✅ More modules coming soon...
 
 
 ---
