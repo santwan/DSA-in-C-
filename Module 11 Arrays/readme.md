@@ -134,11 +134,10 @@ for( int i = 0 to arr.size()-1 ){
 </details>
 </div>
 
-
+[Question 5](./Questions/Question-5.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
-  
-[Question 5](./Questions/Question-5.cpp)
+
 
 ### 1. Brute Force Approach
 
