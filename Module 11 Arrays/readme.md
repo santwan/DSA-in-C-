@@ -142,32 +142,32 @@ for( int i = 0 to arr.size()-1 ){
 ### 1. Brute Force Approach
 
 **How am I thinking to solve this problem**  
-> To find the second largest element in an array, I’ll first sort it in ascending order.  
-> After sorting, the last element is the largest.  
-> Then I’ll scan backward to find the next smaller unique number — that’s my second largest.
+> “I’ll compare every element with every other element using two nested loops.
+> If I ever find two elements that are the same, I return true.
+> If I finish both loops and don’t find any match, I return false.”
 
-- Sort the given array in a particular order 
-- then Take the last element as largest element 
-- Traverse the array using a loop 
-- Start the loop from the backward second last element 
-- Compare with the second largest element with other element one by one 
-- And also check if the current element is not equal to the largest element
-- Assign it if condition hits true and immediately terminate the loop because the array was already sorted.
+- Loop through the array using index i
+- for every run another loop inside the outer loop
+  - Run the loop from j = i+1 to arr.size() - 1
+    - Compare arr[i] with every arr[j]
+    - if match found then return true and break the loop immediately 
+  - End of the inner loop
+- End of the outer loop
+- Return false by default if no duplicate found
 
 ```cpp
-sort( arr )
-max = arr [arr.length - 1]
-for( int i = arr.length - 2 to 0 ){
-  if(secMax < arr[i] && arr[i] != max){
-    secMax = arr[i];
-    return secMax;
+int n = arr.size()
+for ( int i = 0 to n-1){
+  for ( int j = i+1 to n-1 ){
+    if( arr[i] == arr[j]){
+      return false
+    }
   }
-  return -1 if no second largest element found
 }
+return false
 ```
-
-**Time Complexity:** O(n logn) due to use sorting  
-**Space Complexity:** O(1)  
+### Time Complexity: O(n²)
+### Space Complexity:  O(1)  
 
 ---
 
@@ -205,6 +205,7 @@ for( int i = 0 to arr.size()-1 ){
 }
 
 ```
+
 ### Edge Cases 
 - All the elements are equal
   - No Second largest element exist return -1
@@ -212,6 +213,6 @@ for( int i = 0 to arr.size()-1 ){
   - return -1
 
 
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)  
+### Time Complexity: O(n)  
+### Space Complexity: O(1)  
 </details>
