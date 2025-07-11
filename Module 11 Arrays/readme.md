@@ -291,6 +291,54 @@ for( int i = 0; i< arr.size(); i++){
 
 
 
+### [🔹 Question 7 - Finding the the smallest missing positive element in the sorted array. Array contain integers](./Questions/Question-7.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+## 1. Brute Force Approach
+
+**How am I thinking to solve this problem**  
+> Since the array is sorted then if any negative numbers or zero contain then I will skip all negative numbers and zero.
+> Then just like previous we will use a simple expected = 1 variable and compare each positive element with it.
+> As soon as I find any mismatch , that's the smallest missing positive element
+
+- Intialize the the variable expected = 1 
+- Run the loop from i = 0 to upto n-1 where n=size of the array
+  - if array[i] less than or equal to zero 
+    - Skip it
+  - if expected == arr[i] 
+    - increment expected++
+  - else expected not equal to arr[i]
+    - then missing element is expected
+    - break the loop
+- Return the expected at the end
+
+
+```cpp
+expected = 1
+for( int i=0 ; i<n; i++){
+  if(arr[i] <= 0 ) continue
+
+  if(arr[i] == expected ){
+    expected ++;
+  }
+  else if(arr[i] != expected){
+    missing = expected
+    break
+  }
+}
+
+```
+### Time Complexity: O(n)
+### Space Complexity:  O(1)  
+
+---
+
+</details>
+
+
+
+
 ### [🔹 Question 5 - Given an array. predict if the array contains duplicate or not](./Questions/Question-5.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
@@ -332,3 +380,14 @@ for( int i = 0; i< arr.size(); i++){
 ### Space Complexity: O(n)   
   - #### Because in the worst case (no duplicates), we store all n elements in the set.
 </details>
+
+
+
+
+
+
+
+
+
+
+
