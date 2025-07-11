@@ -13,7 +13,7 @@ This repo contains my complete journey of solving DSA problems using **C++**, wi
 
 - [Module 11: Arrays](./Module%2011%20Arrays/readme.md)
   - [Question 1 - Calculate sum of elements](./Module%2011%20Arrays/Question-1.cpp)
-  - [Question 2 - Linear Search](.Module%2011%20Arrays/Questions/Question-2-Linear-Search.cpp)
+  - [Question 2 - Linear Search](./Module%2011%20Arrays/Questions/Question-2-Linear-Search.cpp)
   - [Question 3 - Find Maximum](./Module%2011%20Arrays/Question-3-Find-Max.cpp) *(coming soon)*
 
 > ✅ More modules coming soon...
