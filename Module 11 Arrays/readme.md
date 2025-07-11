@@ -88,11 +88,20 @@ for( int i = arr.length - 2 to 0 ){
 
 ---
 
-### 2. Using Sorting
+### 2. Optimal Approach
 
-- Sort the array in ascending order.
-- After sorting, the last element will be the maximum.
-- Simply return the last element.
+**How am I thinking to solve this problem**  
+> “Instead of sorting, I’ll find the largest and second largest in a single pass.
+> I’ll initialize two variables: max and secMax.
+> While iterating, I update max if I find a new max,
+> and update secMax when I find a number less than max but greater than present element in the array.”
+
+- Initialize two variable max and secMax
+- Traverse the array using a loop from the start to end 
+- if: max < current element 
+  - then I will update max to current element
+  - and secMax = max because if new largest element that is greater than the max have found then definitely the value inside the current max becomes second largest in the array. So this step needs to be done first inside the if condition before assigning the current element to max. Otherwise second largest value wil be lost.
+- else: 
 
 **Time Complexity:** O(n log n)  
 **Space Complexity:** O(1)  
