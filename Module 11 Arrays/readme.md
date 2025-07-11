@@ -134,10 +134,10 @@ for( int i = 0 to arr.size()-1 ){
 </details>
 </div>
 
-### [🔹 Question 5](./Questions/Question-5.cpp)
+
+### [🔹 Question 5 - Given an array. predict if the array contains duplicate or not](./Questions/Question-5.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
-
 
 ### 1. Brute Force Approach
 
