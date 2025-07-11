@@ -219,37 +219,73 @@ return false
 >I can start checking from 1 and go up , comparing each number with the current element of the array 
 >as soon as the number i expect is not found , that's the missing one.
 
-- Loop through the array using index i
+- Since smallest positive element must be surely 1 then
+- initialize a variable expected = 1
+- Traverse the array using a loop and use the index to find the element 
+  - if present element != expected 
+    - return missing element = expected
+    - End the loop
+  - else present element == expected 
+    - increment the expected by 1 
+- End of loop
+- If all elements are matched , return that no smallest missing element in the array
+
 
 
 ```cpp
-
+int expected = 1
+for( int i = 0; i< arr.size(); i++){
+  if (arr[i] != expected){
+    return expected
+  }
+  else if(arr[i] == expected){
+    expected ++
+  }
+}
 
 ```
-### Time Complexity: O()
-### Space Complexity:  O()  
+### Time Complexity: O(n)
+### Space Complexity:  O(1)  
 
 ---
 
-## 2. Optimal Approach ( using hashing )
+## 2. Optimal Approach ( using Binary Search )
 
 **How am I thinking to solve this problem**  
-> 
+>  Since the array is sorted , i can apply binary search to reduce the time complexity
+> For every index i in the array, the expected value should be i+1
+> if (arr[i] == i+1) then the missing element may be present on the RHS. Keep searching
+> if (arr[i] != i+1) then the missing number is on the left
 
 
-- Initialize 
+- Initialize low = 0, high = n - 1.
 
+- While low <= high:
 
+  - Compute mid = (low + high) / 2.
+
+  - If arr[mid] == mid + 1, search in the right half.
+
+  - Else, search in the left half.
+
+- At the end, return low + 1 as the smallest missing number.
 
 ``` cpp
-
+1. low = 0, high = n - 1
+2. while low <= high:
+     mid = (low + high) / 2
+     if arr[mid] == mid + 1:
+         low = mid + 1
+     else:
+         high = mid - 1
+3. return low + 1
 
 ```
 
-### Time Complexity: O(n)
-  - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
-### Space Complexity: O(n)   
-  - #### Because in the worst case (no duplicates), we store all n elements in the set.
+### Time Complexity: O( log n )
+  - #### Because we are using the Binary search
+### Space Complexity: O(1)   
+
 </details>
 
 
