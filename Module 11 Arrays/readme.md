@@ -132,6 +132,87 @@ for( int i = 0 to arr.size()-1 ){
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)  
 </details>
-
 </div>
 
+
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+  
+[Question 5](./Questions/Question-5.cpp)
+
+### 1. Brute Force Approach
+
+**How am I thinking to solve this problem**  
+> To find the second largest element in an array, I’ll first sort it in ascending order.  
+> After sorting, the last element is the largest.  
+> Then I’ll scan backward to find the next smaller unique number — that’s my second largest.
+
+- Sort the given array in a particular order 
+- then Take the last element as largest element 
+- Traverse the array using a loop 
+- Start the loop from the backward second last element 
+- Compare with the second largest element with other element one by one 
+- And also check if the current element is not equal to the largest element
+- Assign it if condition hits true and immediately terminate the loop because the array was already sorted.
+
+```cpp
+sort( arr )
+max = arr [arr.length - 1]
+for( int i = arr.length - 2 to 0 ){
+  if(secMax < arr[i] && arr[i] != max){
+    secMax = arr[i];
+    return secMax;
+  }
+  return -1 if no second largest element found
+}
+```
+
+**Time Complexity:** O(n logn) due to use sorting  
+**Space Complexity:** O(1)  
+
+---
+
+### 2. Optimal Approach
+
+**How am I thinking to solve this problem**  
+> “Instead of sorting, I’ll find the largest and second largest in a single pass.
+> I’ll initialize two variables: max and secMax.
+> While iterating, I update max if I find a new max,
+> and update secMax when I find a number less than max but greater than present element in the array.”
+
+- Initialize two variable max and secMax
+- Traverse the array using a loop from the start to end 
+- if: max < current element 
+  - then I will update max to current element
+  - and secMax = max because if new largest element that is greater than the max have found then definitely the value inside the current max becomes second largest in the array. So this step needs to be done first inside the if condition before assigning the current element to max. Otherwise second largest value wil be lost.
+- else: Check whether the secMax < current element && current element != max
+  - then assign the current element to secMax
+- End of the loop
+- return secMax
+
+``` cpp
+int max , secMax = INT_MIN
+for( int i = 0 to arr.size()-1 ){
+  if( arr[i] > max ){
+    secMax = max
+    max = arr[i]
+  }
+  else {
+    if(secMax < arr[i] && arr[i] != max ){
+      secMax = arr[i]
+    }
+  }
+  return secMax;
+}
+
+```
+### Edge Cases 
+- All the elements are equal
+  - No Second largest element exist return -1
+- Only one element in the array
+  - return -1
+
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)  
+</details>
