@@ -369,7 +369,7 @@ for( int i=0 ; i<n; i++){
 
 ### [🔹 Question 8 - PLaying with arr and pointer](./Questions/Question-8.cpp)
 <details>
-  <summary><strong>Algo & Approach</strong></summary>
+  <summary><strong>Concept Explained in this blog</strong></summary>
 
 <a href="https://coffee-and-code.hashnode.dev/why-arr-andarr-and-arr0-arent-the-same-in-c">
   <img src="./assets/image1.png" alt=C++ Thumbnail"  />
