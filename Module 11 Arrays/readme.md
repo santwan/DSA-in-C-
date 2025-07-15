@@ -501,9 +501,10 @@ for( i=0 to arr.size()-1 ){
   <summary><h2>1. Optimal Approach</h2></summary>
 
 **How am I thinking to solve this problem**  
-> I will use two pointers ----- one at the start and one at the end of array
-> I will swap two elements with each other in every pass and then move both pointers inward
-> Continue this until they meet or cross
+> I will use two pointers ----- one at the start and one at the end of array.
+> I will swap two elements with each other in every pass and then move both pointers inward.
+
+> Continue this until they meet or cross.
 > this way , I reverse the array in-place, without using any extra space.
 
 - Initialize left = 0 and right = n - 1
