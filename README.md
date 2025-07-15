@@ -1,6 +1,7 @@
 
 ![Thumbnail](./theme.png)
 ![Thumbnail](./DSA%20in%20C++.png)
+
 ---
 #### Welcome to my Data Structures and Algorithms repository!  
 #### This repo contains my complete journey of solving DSA problems using **C++**, with clear structure, explanations, and code — all organized module-wise.
