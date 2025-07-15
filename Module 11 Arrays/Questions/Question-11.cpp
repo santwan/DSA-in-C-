@@ -17,6 +17,11 @@ int main(){
         right--;
     }
 
+    //? can also be solved using for loop
+    // for(int left=0, right=arr.size()-1; left<=right; left++,right--){
+    //     swap(arr[left], arr[right]);
+    // }
+
     cout<<"New Reverse Array: ";
     for(int i=0 ; i<arr.size(); i++){
         cout<<arr.at(i)<<" ";
