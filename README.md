@@ -1,3 +1,4 @@
+<h1 align="center">🔰 DSA in C++ 🔰</h1>
 
 ![Thumbnail](./theme.png)
 ![Thumbnail](./DSA%20in%20C++.png)
