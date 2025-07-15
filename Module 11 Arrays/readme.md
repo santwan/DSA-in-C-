@@ -387,7 +387,8 @@ for( int i=0 ; i<n; i++){
 
 ❓ **Problem Statement:** **Given an array of integers and a target sum x. Find Whether there exists a pair(doublet) such that : arr[i] + arr[j] ==  x. Also return the indices of that pair if it exists**
 
-## 1. Brute Force Approach
+<details>
+  <summary><h2>1. Brute Force Approach</h2</summary>
 
 **How am I thinking to solve this problem**  
 > I will check every possible pair in the array using two nested loops. 
@@ -415,6 +416,7 @@ for( i=0 to arr.size()-1 ){
 ### Space Complexity:  O(1)  
 
 ---
+</details>
 
 ## 2. Optimal Approach ( using hashing )
 
