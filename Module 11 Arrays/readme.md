@@ -487,13 +487,47 @@ for( i=0 to arr.size()-1 ){
 
 ---
 </details>
+</details> 
+
+
+
+### [🔹 Question 11 - Reverse the Array without using any extra array](./Questions/Question-11.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** **Given an array of integers and a target sum x. Find Whether there exists a pair(doublet) such that : arr[i] + arr[j] ==  x. Also return the indices of that pair if it exists**
+
+<details>
+  <summary><h2>1. Optimal Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> I will use two pointers ----- one at the start and one at the end of array
+> I will swap two elements with each other in every pass and then move both pointers inward
+> Continue this until they meet or cross
+> this way , I reverse the array in-place, without using any extra space.
+
+- Initialize left = 0 and right = n - 1
+
+- While left < right:
+
+  - Swap arr[left] and arr[right]
+
+  - Increment left and decrement right
+
+The array is now reversed
+
+```cpp
+1. left = 0, right = n - 1
+2. while left < right:
+     swap(arr[left], arr[right])
+     left++
+     right--
+```
+### Time Complexity: O(n)  
+### Space Complexity:  O(1)
+
+---
 </details>
 
 
-
-
-
-
-
-
-
+</details>
