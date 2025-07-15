@@ -367,7 +367,7 @@ for( int i=0 ; i<n; i++){
 
 
 
-### [🔹 Question 8 - Given an array. predict if the array contains duplicate or not](./Questions/Question-8.cpp)
+### [🔹 Question 8 - PLaying with arr and pointer](./Questions/Question-8.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
