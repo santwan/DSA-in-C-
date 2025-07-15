@@ -10,7 +10,7 @@
 
 Welcome to this deep dive into one of the most foundational concepts in C++ — **Arrays and Pointers**. Whether you're a beginner or revising for interviews, this blog covers the subtle and powerful relationships between arrays and pointers, with clear examples and practical insights.
 
-> 🚀 Read the full blog here: [Mastering Arrays and Pointers in C++](https://yourbloglink.com)
+> 🚀 Read the full blog here: [Mastering Arrays and Pointers in C++](https://coffee-and-code.hashnode.dev/why-arr-andarr-and-arr0-arent-the-same-in-c)
 
 ---
 
