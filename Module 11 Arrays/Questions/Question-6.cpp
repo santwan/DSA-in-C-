@@ -14,7 +14,7 @@ int findMissingBrute(int arr[], int n) {
         if (arr[i] != expected) {
             return expected;
         }
-        expected++;
+        if(arr[i] > expected)
     }
 
     return expected=-1;
