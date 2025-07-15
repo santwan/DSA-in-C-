@@ -385,7 +385,7 @@ for( int i=0 ; i<n; i++){
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
-## ❓ Problem Statement: 
+❓ **Problem Statement:** 
 #### Given an array of integers and a target sum x. Find Whether there exists a pair(doublet) such that : arr[i] + arr[j] ==  x. Also return the indices of that pair if it exists
 
 ## 1. Brute Force Approach
