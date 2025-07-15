@@ -371,42 +371,9 @@ for( int i=0 ; i<n; i++){
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
-## 1. Brute Force Approach
-
-**How am I thinking to solve this problem**  
-> 
-
-- Loop through the array using index i
-
-
-```cpp
-
-
-```
-### Time Complexity: O()
-### Space Complexity:  O()  
-
----
-
-## 2. Optimal Approach ( using hashing )
-
-**How am I thinking to solve this problem**  
-> 
-
-
-- Initialize 
-
-
-
-``` cpp
-
-
-```
-
-### Time Complexity: O(n)
-  - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
-### Space Complexity: O(n)   
-  - #### Because in the worst case (no duplicates), we store all n elements in the set.
+<a href="https://coffee-and-code.hashnode.dev/why-arr-andarr-and-arr0-arent-the-same-in-c">
+  <img src="./assets/image1.png" alt=C++ Thumbnail"  />
+</a>
 </details>
 
 
