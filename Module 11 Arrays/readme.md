@@ -1,5 +1,8 @@
 # 📦 Module 11: Arrays
 
+## Blogs 
+<details>ALL THE BLOG LINKS</details>
+
 ## 📘 Questions List
 
 <div style="border: 1px solid rgb(213, 255, 1) ; border-radius: 8px; padding: 12px; margin-bottom: 16px; background-color: #f9f9f9;">
@@ -339,7 +342,7 @@ for( int i=0 ; i<n; i++){
 
 
 
-### [🔹 Question 5 - Given an array. predict if the array contains duplicate or not](./Questions/Question-5.cpp)
+### [🔹 Question 8 - Given an array. predict if the array contains duplicate or not](./Questions/Question-8.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
