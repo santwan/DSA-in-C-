@@ -7,7 +7,7 @@
 # 🔥 Mastering Arrays and Pointers in C++
 
 <a href="https://coffee-and-code.hashnode.dev/why-arr-andarr-and-arr0-arent-the-same-in-c">
-  <img src="./assets/image1.png" alt=C++ Thumbnail" width="600" height="400"/>
+  <img src="./assets/image1.png" alt=C++ Thumbnail"  style="max-width: 100%; height: auto;" />
 </a>
 
 
