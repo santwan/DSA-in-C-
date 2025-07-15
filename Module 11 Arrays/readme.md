@@ -4,6 +4,25 @@
 <details>
 <summary><strong>ALL THE BLOGS LINKS</strong></summary>
 
+# 🔥 Mastering Arrays and Pointers in C++
+
+![Thumbnail](./assets/image1.png)
+
+Welcome to this deep dive into one of the most foundational concepts in C++ — **Arrays and Pointers**. Whether you're a beginner or revising for interviews, this blog covers the subtle and powerful relationships between arrays and pointers, with clear examples and practical insights.
+
+> 🚀 Read the full blog here: [Mastering Arrays and Pointers in C++](https://yourbloglink.com)
+
+---
+
+## 📌 What's Inside?
+
+- The difference between `arr`, `&arr`, and `arr[0]`
+- Why `int* p = &arr` throws an error
+- Pointer arithmetic with arrays
+- Accessing and modifying elements using pointers
+- Memory layout and visual diagrams
+- Code snippets with explanations
+
 
 </details>
 
