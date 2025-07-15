@@ -2,7 +2,7 @@
 
 ## Blogs 
 <details>
-<summary>LINK</summary>
+<summary><strong>ALL THE BLOGS LINKS</strong></summary>
 </details>
 
 ## 📘 Questions List
