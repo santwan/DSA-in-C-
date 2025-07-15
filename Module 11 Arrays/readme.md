@@ -501,10 +501,7 @@ for( i=0 to arr.size()-1 ){
   <summary><h2>1. Optimal Approach</h2></summary>
 
 **How am I thinking to solve this problem**  
-> - I will use two pointers ----- one at the start and one at the end of array.
-> - I will swap two elements with each other in every pass and then move both pointers inward.
-> - Continue this until they meet or cross.
-> - this way , I reverse the array in-place, without using any extra space.
+> - 
 
 - Initialize left = 0 and right = n - 1
 
@@ -528,6 +525,42 @@ The array is now reversed
 
 ---
 </details>
+</details>
 
 
+
+
+
+### [🔹 Question 12 - Reverse part/portion of array ](./Questions/Question-11.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** **Reverse a portion of the array from given `start` to `end` indices using two pointers.**
+
+<details>
+  <summary><h2>1. Optimal Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> - This exactly similar to the previous one Question-11
+
+- Initialize two pointers: `left = start`, `right = end`
+- While `left < right`:
+    - Swap elements at `left` and `right`
+    - Increment `left`, decrement `right`
+- The specified subarray will be reversed in-place
+
+
+
+### Time Complexity:
+- Best Case: O(1)  
+  → If start == end, no swaps needed
+
+- Worst Case: O(k) where k = (end - start + 1)  
+  → Every element in the range is involved in a swap
+
+### Space Complexity: O(1)  
+→ Constant space used for two pointers
+
+---
+</details>
 </details>
