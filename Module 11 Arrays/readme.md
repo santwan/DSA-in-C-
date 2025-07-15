@@ -452,6 +452,41 @@ for( i=0 to arr.size()-1 ){
 
 ---
 </details>
+
+<details>
+  <summary><h2>3. Better Approach (Sorting + Two Pointers)</h2></summary>
+
+**How am I thinking to solve this problem**  
+> “I’ll use a hash map to store the values I’ve seen and their indices.
+> For each element a, I check if x - a exists in the map.
+> If yes, I’ve found my pair — return indices.
+> If not, I store a in the map and continue.”
+
+- Initialize an empty hash map
+
+- Traverse array from left to right:
+
+  - For each arr[i], compute target = x - arr[i]
+
+  - If target exists in map → return (target, arr[i]) and their indices
+
+  - Else, insert arr[i] → i in map
+
+```cpp
+1. Initialize unordered_map<int, int> m
+2. for i = 0 to n-1:
+     target = x - arr[i]
+     if m contains target:
+         return (target, arr[i], m[target], i)
+     else:
+         m[arr[i]] = i
+
+```
+### Time Complexity: O(n)
+### Space Complexity:  O(n)
+
+---
+</details>
 </details>
 
 
