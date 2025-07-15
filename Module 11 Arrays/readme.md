@@ -383,7 +383,7 @@ for( int i=0 ; i<n; i++){
 
 ### [🔹 Question 10 - ](./Questions/Question-5.cpp)
 <details>
-  <h1><summary><strong>Algo & Approach</strong></summary></h1>
+  <summary><h1>Algo & Approach</h1></summary>
 
 ❓ **Problem Statement:** **Given an array of integers and a target sum x. Find Whether there exists a pair(doublet) such that : arr[i] + arr[j] ==  x. Also return the indices of that pair if it exists**
 
