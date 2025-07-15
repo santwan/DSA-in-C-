@@ -495,7 +495,7 @@ for( i=0 to arr.size()-1 ){
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
-❓ **Problem Statement:** **Given an array of integers and a target sum x. Find Whether there exists a pair(doublet) such that : arr[i] + arr[j] ==  x. Also return the indices of that pair if it exists**
+❓ **Problem Statement:** **Reverse the entire array in-place using the Two Pointer technique. You are not allowed to use any extra array.**
 
 <details>
   <summary><h2>1. Optimal Approach</h2></summary>
