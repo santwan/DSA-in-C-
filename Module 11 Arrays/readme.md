@@ -1,7 +1,9 @@
 # 📦 Module 11: Arrays
 
 ## Blogs 
-<details>ALL THE BLOG LINKS</details>
+<details>
+<summary>LINK</summary>
+</details>
 
 ## 📘 Questions List
 
