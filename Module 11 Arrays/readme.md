@@ -1,6 +1,6 @@
 # 📦 Module 11: Arrays
 
-## Blogs 
+## 📝 Blogs 
 <details>
 <summary><strong>ALL THE BLOGS LINKS</strong></summary>
 
@@ -9,7 +9,6 @@
 <a href="https://coffee-and-code.hashnode.dev/why-arr-andarr-and-arr0-arent-the-same-in-c">
   <img src="./assets/image1.png" alt=C++ Thumbnail"  />
 </a>
-
 
 Welcome to this deep dive into one of the most foundational concepts in C++ — **Arrays and Pointers**. Whether you're a beginner or revising for interviews, this blog covers the subtle and powerful relationships between arrays and pointers, with clear examples and practical insights.
 
