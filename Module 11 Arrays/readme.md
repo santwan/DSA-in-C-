@@ -381,7 +381,7 @@ for( int i=0 ; i<n; i++){
 
 
 
-### [🔹 Question 10 - ](./Questions/Question-5.cpp)
+### [🔹 Question 10 - Two Sum Problem](./Questions/Question-5.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
