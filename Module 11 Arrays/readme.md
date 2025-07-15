@@ -377,6 +377,66 @@ for( int i=0 ; i<n; i++){
 </details>
 
 
+### [🔹 Question 9 - Finding the Last occurrence of x ](./Questions/Question-9.cpp)
+
+
+
+### [🔹 Question 10 - ](./Questions/Question-5.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+## ❓ Problem Statement: 
+#### Given an array of integers and a target sum x. Find Whether there exists a pair(doublet) such that : arr[i] + arr[j] ==  x. Also return the indices of that pair if it exists
+
+## 1. Brute Force Approach
+
+**How am I thinking to solve this problem**  
+> I will check every possible pair in the array using two nested loops. 
+> If any two elements sum to the target x, I return them.
+> It's slow but guaranteed to work.
+
+- Loop through the array with index i
+
+- For every i, run another loop from i+1 to end using j
+
+- Check if arr[i] + arr[j] == x
+
+- If yes, return the pair and their indices
+
+```cpp
+for( i=0 to arr.size()-1 ){
+  for(j=i+1 to arr.size()-1 ){
+    if(arr[i]+arr[j] == x ){
+      print(i,j)
+    }
+  }
+}
+```
+### Time Complexity: O(n²)
+### Space Complexity:  O(1)  
+
+---
+
+## 2. Optimal Approach ( using hashing )
+
+**How am I thinking to solve this problem**  
+> 
+
+
+- Initialize 
+
+
+
+``` cpp
+
+
+```
+
+### Time Complexity: O(n)
+  - #### Because we loop through the array once , and each insert and find operation in the hash set takes O(1) on average
+### Space Complexity: O(n)   
+  - #### Because in the worst case (no duplicates), we store all n elements in the set.
+</details>
 
 
 
