@@ -1,4 +1,4 @@
-# 🚀 DSA-in-C++
+
 ![Thumbnail](./theme.png)
 ![Thumbnail](./DSA%20in%20C++.png)
 Welcome to my Data Structures and Algorithms repository!  
