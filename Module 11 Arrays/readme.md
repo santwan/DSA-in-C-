@@ -623,9 +623,12 @@ After 2nd rotation → [3, 4, 5, 1, 2]
   <summary><h2>1. Optimal  Approach</h2></summary>
 
 **How am I thinking to solve this problem**  
-IF you notice there is a unique pattern in this question. 
-The hint will be : Try to observe and apply array reversal concept 
-Let'  understand this with a help of an example: here k = 2 i.e left rotate by two element
+
+If you notice, there is a unique pattern in this question.
+The hint is: Try to observe and apply the array reversal concept.
+
+Let’s understand this with the help of an example.
+Let’s take k = 2, i.e., left rotate the array by 2 elements:
 
 | Array Index    | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 | -------------- | - | - | - | - | - | - | - |
@@ -634,22 +637,49 @@ Let'  understand this with a help of an example: here k = 2 i.e left rotate by t
 | 2nd Rotation   | 2 | 3 | 7 | 4 | 8 | 1 | 6 |
 
 
-Now notice if k = 2 then obiously  the last two element in the array will be replaced from its position 
+Now notice 
+if k = 2 then obiously  the last two element in the array will be replaced from its position 
 Then observe that remaining part of the array that from index 0 to 4 is shifting as it is
-taking n = arr.size()
-So what we can do - think of divide the array into two regionb 
-  - first region from include the elements that will be removed or rotated 
-  - if k then last k elements will be our target that from index o to n-k-1
-  - second region : from index n-k to n-1 element which is equal to k
+Let n = arr.size()
+So what we can do - think of dividing the array into two region
+  - **First region (from index 0 to n-k-1)** → these are the elements that get shifted left
+  - **Second region (from index n-k to n-1)** → these are the last k elements that move to the front
 
-Now Reverse the array :
-  - first reverse from index 0 to n-k-1 
-  - second reverse from index n-k to n-1
-  - Then Reverser the whole from index 0 to n-1
-  - RESULT = ROTATED ARRAY by k steps
+Now apply array reversal:
+To simulate left rotation by k steps, follow these 3 steps:
+
+1. Reverse the first region → from index 0 to n-k-1
+
+2. Reverse the second region → from index n-k to n-1
+
+3. Reverse the entire array → from index 0 to n-1
+
+✅ The result will be the left-rotated array.
 
 But we will encountered a problem if k > n 
-Because in this approach we will be accessing out of bound index which will give error or unwanted output.
+Because in this approach we will be accessing out of bound indices which will give error or unwanted output. So we must normalize the k before doing anything.
+
+**What if k > n?**
+We will encounter a problem if k > n,
+because in this approach we will be accessing out-of-bound indices, which will cause either errors or unwanted output.
+
+So we must normalize k before doing anything.
+- Rotation of an array can be visualized like a circular queue.
+
+- If k == n (i.e., rotation count equals array size), we get the same array.
+
+- So, if k > n, let’s say n = 7 and k = 9,
+  - then the first 7 rotations bring the array back to its original state.
+  - The actual visible effect comes only from the remaining 2 rotations, which is k - n.
+
+So, to avoid going out of bounds and to avoid unnecessary full rotations,
+we should normalize k using:
+
+```
+k = k % n;
+```
+
+This keeps our algorithm safe, efficient, and handles all cases properly.
 
 
 
