@@ -564,3 +564,128 @@ The array is now reversed
 ---
 </details>
 </details>
+
+
+
+</details>
+</details>
+
+### [🔹 Question 13 - Rotating Array by k steps ](./Questions/Question-13.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** **Reverse a portion of the array from given `start` to `end` indices using two pointers.**
+
+<details>
+  <summary><h2>1. Brute Force Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> - I will rotate the array one step at a time and I will repeat this k times. In each rotation , I move the first element to the end and shift the rest left by one. It's slow but definitely works. 
+
+- for i = 1 to k (the number of k determines how many times we will rotate the array )
+  - store the arr[0] that is the first element into a temp variable so that you donot lost the fist element.
+  - for( int i = 1 to arr.size()-1 )
+    - inside this loop shift all elements from i to i-1 one by one .
+  - After the end of the inner loop place the temp variable into the arr[arr.size()-1]
+- End of the outer loop.
+
+
+```cpp
+for(int i = 1; i<=k ; i++ ){
+  int temp = arr[0]
+  for(int j = 1; j<arr.size : j++ ){
+    arr[i-1] = arr[i]
+  }
+  arr[arr.size()-1] = temp
+}
+
+```
+
+Original: [1, 2, 3, 4, 5], k = 2
+
+After 1st rotation → [2, 3, 4, 5, 1]
+
+After 2nd rotation → [3, 4, 5, 1, 2]
+
+### Time Complexity:
+- Best Case: O(1) 
+  → When k==0 or array size = 1
+
+- **Worst Case: O(n*k)** 
+  → For every k, we shift all n elements once
+
+### Space Complexity: O(1)  
+
+---
+</details>
+
+<details>
+  <summary><h2>1. Optimal  Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+IF you notice there is a unique pattern in this question. 
+The hint will be : Try to observe and apply array reversal concept 
+Let'  understand this with a help of an example: here k = 2 i.e left rotate by two element
+|Array Index     | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|Original Array  | 1 | 6 | 2 | 3 | 7 | 4 | 8 |
+|1st rotation    | 8 | 1 | 6 | 2 | 3 | 7 | 4 |
+|2nd rotation    | 4 | 8 | 1 | 6 | 2 | 3 | 7 |
+
+Now notice if k = 2 then obiously  the last two element in the array will be replaced from its position 
+Then observe that remaining part of the array that from index 0 to 4 is shifting as it is
+taking n = arr.size()
+So what we can do - think of divide the array into two regionb 
+  - first region from include the elements that will be removed or rotated 
+  - if k then last k elements will be our target that from index o to n-k-1
+  - second region : from index n-k to n-1 element which is equal to k
+
+Now Reverse the array :
+  - first reverse from index 0 to n-k-1 
+  - second reverse from index n-k to n-1
+  - Then Reverser the whole from index 0 to n-1
+  - RESULT = ROTATED ARRAY by k steps
+
+But we will encountered a problem if k > n 
+Because in this approach we will be accessing out of bound index which will give error or unwanted output.
+
+
+
+- for i = 1 to k (the number of k determines how many times we will rotate the array )
+  - store the arr[0] that is the first element into a temp variable so that you donot lost the fist element.
+  - for( int i = 1 to arr.size()-1 )
+    - inside this loop shift all elements from i to i-1 one by one .
+  - After the end of the inner loop place the temp variable into the arr[arr.size()-1]
+- End of the outer loop.
+
+
+```cpp
+for(int i = 1; i<=k ; i++ ){
+  int temp = arr[0]
+  for(int j = 1; j<arr.size : j++ ){
+    arr[i-1] = arr[i]
+  }
+  arr[arr.size()-1] = temp
+}
+
+```
+
+Original: [1, 2, 3, 4, 5], k = 2
+
+After 1st rotation → [2, 3, 4, 5, 1]
+
+After 2nd rotation → [3, 4, 5, 1, 2]
+
+### Time Complexity:
+- Best Case: O(1) 
+  → When k==0 or array size = 1
+
+- **Worst Case: O(n*k)** 
+  → For every k, we shift all n elements once
+
+### Space Complexity: O(1)  
+
+---
+</details>
+
+
+</details>
