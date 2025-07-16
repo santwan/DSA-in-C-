@@ -626,10 +626,13 @@ After 2nd rotation → [3, 4, 5, 1, 2]
 IF you notice there is a unique pattern in this question. 
 The hint will be : Try to observe and apply array reversal concept 
 Let'  understand this with a help of an example: here k = 2 i.e left rotate by two element
-|Array Index     | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
-|Original Array  | 1 | 6 | 2 | 3 | 7 | 4 | 8 |
-|1st rotation    | 8 | 1 | 6 | 2 | 3 | 7 | 4 |
-|2nd rotation    | 4 | 8 | 1 | 6 | 2 | 3 | 7 |
+
+| Array Index    | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| -------------- | - | - | - | - | - | - | - |
+| Original Array | 1 | 6 | 2 | 3 | 7 | 4 | 8 |
+| 1st Rotation   | 6 | 2 | 3 | 7 | 4 | 8 | 1 |
+| 2nd Rotation   | 2 | 3 | 7 | 4 | 8 | 1 | 6 |
+
 
 Now notice if k = 2 then obiously  the last two element in the array will be replaced from its position 
 Then observe that remaining part of the array that from index 0 to 4 is shifting as it is
