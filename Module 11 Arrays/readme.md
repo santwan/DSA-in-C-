@@ -656,10 +656,8 @@ To simulate left rotation by k steps, follow these 3 steps:
 
 ✅ The result will be the left-rotated array.
 
-But we will encountered a problem if k > n 
-Because in this approach we will be accessing out of bound indices which will give error or unwanted output. So we must normalize the k before doing anything.
 
-**What if k > n?**
+**What if k > n?**</br>
 We will encounter a problem if k > n,
 because in this approach we will be accessing out-of-bound indices, which will cause either errors or unwanted output.
 
@@ -683,30 +681,12 @@ This keeps our algorithm safe, efficient, and handles all cases properly.
 
 
 
-- for i = 1 to k (the number of k determines how many times we will rotate the array )
-  - store the arr[0] that is the first element into a temp variable so that you donot lost the fist element.
-  - for( int i = 1 to arr.size()-1 )
-    - inside this loop shift all elements from i to i-1 one by one .
-  - After the end of the inner loop place the temp variable into the arr[arr.size()-1]
-- End of the outer loop.
-
+- for
 
 ```cpp
-for(int i = 1; i<=k ; i++ ){
-  int temp = arr[0]
-  for(int j = 1; j<arr.size : j++ ){
-    arr[i-1] = arr[i]
-  }
-  arr[arr.size()-1] = temp
-}
+
 
 ```
-
-Original: [1, 2, 3, 4, 5], k = 2
-
-After 1st rotation → [2, 3, 4, 5, 1]
-
-After 2nd rotation → [3, 4, 5, 1, 2]
 
 ### Time Complexity:
 - Best Case: O(1) 
