@@ -570,7 +570,7 @@ The array is now reversed
 </details>
 </details>
 
-### [🔹 Question 13 - Rotating Array by k steps ](./Questions/Question-13.cpp)
+### [🛑 Question 13 - Rotating Array by k steps ](./Questions/Question-13.cpp)
 <details>
   <summary><strong>Algo & Approach</strong></summary>
 
