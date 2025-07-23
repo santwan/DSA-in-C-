@@ -699,6 +699,94 @@ This keeps our algorithm safe, efficient, and handles all cases properly.
 
 ---
 </details>
+</details>
+
+<!----------------------------- question - 14 --------------------------------------------->
+
+### [🔹 Question 14 - Sort array of only 1s and 0s ](./Questions/Question-14.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** ****
+
+<details>
+  <summary><h2>1. Brute Force Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> I will check every possible 
+
+- Loop through 
+
+```cpp
+
+```
+### Time Complexity: O(n²)
+### Space Complexity:  O(1)  
+
+---
+</details>
+
+<details>
+  <summary><h2>2. Better Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
 
 
+- Initialize 
+
+```cpp
+
+
+```
+### Time Complexity: O(n)
+### Space Complexity:  O(n)
+
+---
+</details>
+</details>
+
+<!---------------------------- End of Question no 14 -------------------------------------->
+
+ <!--------------------------- Question - 15 ---------------------------------------------->
+
+ ### [🔹 Question 15 - Given an array of integers, rearrange the elements such that all negative numbers appear before all positive numbers.](./Questions/Question-15.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** ****
+
+<details>
+  <summary><h2>1. Brute Force Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> I will check every possible 
+
+- Loop through 
+
+```cpp
+
+```
+### Time Complexity: O(n²)
+### Space Complexity:  O(1)  
+
+---
+</details>
+
+<details>
+  <summary><h2>2. Better Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> “I’ll use a
+
+- Initialize 
+
+```cpp
+
+
+```
+### Time Complexity: O(n)
+### Space Complexity:  O(n)
+
+---
+</details>
 </details>
