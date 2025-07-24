@@ -790,3 +790,43 @@ This keeps our algorithm safe, efficient, and handles all cases properly.
 ---
 </details>
 </details>
+
+<!---------------------------- End of Question no 15 -------------------------------------->
+
+
+
+ <!--------------------------- Question - 16 ---------------------------------------------->
+
+ ### [🛑 Question 16 - Sort the array of 0s and 1s and 2s ( Dutch national Flag Problem) .](./Questions/Question-16.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** **Sort the array of 0s and 1s and 2s. Given an array of integers containing only 0s, 1s, and 2s, sort the array in a single pass. The order of 0s, 1s, and 2s should be preserved. You cannot use any sorting algorithm. This is question on the leetcode is knwown as "Sort Colors" or "Dutch National Flag Problem". Time complexity: O(n)**
+
+</details>
+
+<!---------------------------- End of Question no 16 -------------------------------------->
+
+ <!--------------------------- Question - 17 ---------------------------------------------->
+
+ ### [🛑 Question 17 - Merge two sorted arrays into a single sorted array. .](./Questions/Question-17.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** **Sort the array of 0s and 1s and 2s. Given an array of integers containing only 0s, 1s, and 2s, sort the array in a single pass. The order of 0s, 1s, and 2s should be preserved. You cannot use any sorting algorithm. This is question on the leetcode is knwown as "Sort Colors" or "Dutch National Flag Problem". Time complexity: O(n)**
+
+</details>
+
+<!---------------------------- End of Question no 17 -------------------------------------->
+
+ <!--------------------------- Question - 17 ---------------------------------------------->
+
+ ### [🛑 Question 18 - Merge two sorted arrays into a single sorted array. .](./Questions/Question-18.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** ****
+
+</details>
+
+<!---------------------------- End of Question no 18 -------------------------------------->
