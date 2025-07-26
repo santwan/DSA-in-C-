@@ -1,0 +1,41 @@
+### [🔹 Question 16 - ](./Questions/Question-16.cpp)
+<details>
+  <summary><strong>Algo & Approach</strong></summary>
+
+❓ **Problem Statement:** ****
+
+<details>
+  <summary><h2>1. Brute Force Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> I will check every possible 
+
+- Loop through 
+
+```cpp
+
+```
+### Time Complexity: O(n²)
+### Space Complexity:  O(1)  
+
+---
+</details>
+
+<details>
+  <summary><h2>2. Better Approach</h2></summary>
+
+**How am I thinking to solve this problem**  
+> “I’ll use a
+
+- Initialize 
+
+```cpp
+
+
+```
+### Time Complexity: O(n)
+### Space Complexity:  O(n)
+
+---
+</details>
+</details>
