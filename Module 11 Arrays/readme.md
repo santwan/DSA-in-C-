@@ -819,7 +819,7 @@ This keeps our algorithm safe, efficient, and handles all cases properly.
 
 <!---------------------------- End of Question no 17 -------------------------------------->
 
- <!--------------------------- Question - 17 ---------------------------------------------->
+ <!--------------------------- Question - 18 ---------------------------------------------->
 
  ### [🛑 Question 18 - Merge two sorted arrays into a single sorted array. .](./Questions/Question-18.cpp)
 <details>
